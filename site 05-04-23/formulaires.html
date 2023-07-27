@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaires</title>
+   <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <form name="formulaire_contact" method="POST" action="">
+    <fieldset> <!-- encadrement -->
+        <legend>Saisissez vos informations</legend>
+        <label for="nom">Entrez votre nom :</label> 
+        <input type="text" name="nom" id="nom" size="40"
+        maxlength="60" minlength="10" placeholder="Entrez votre nom" autocomplete="off">
+        <br><br>
+        <label for="prenom">Entrez votre prénom</label>
+        <input type="text" name="prenom" id="prenom" size="40"
+        maxlength="60" minlength="10" placeholder="Entrez votre prénom" autocomplete="on">
+       <br><br>
+        <label for="mail">Entrez votrez email</label>
+        <input type="email" name="mail" id="mail" size="50" placeholder="Entrez votre adresse courriel" autocomplete="off">
+    </fieldset>
+        <br><br>
+        <input type="password" name="mdp" id="mdp" size="40" placeholder="Mot de passe">
+        <br><br>
+        <label for="naissance">Choisir votre date de naissance</label>
+        <input type="date" name="naissance" id="naissance">
+        <br><br>
+        <label for="telephone">Entrez votre numéro de téléphone</label>
+        <input type="tel" name="telephone" id="telephone" size="10" maxlength="10">
+        <br><br>
+        <label for="adresse">Entrez votre adresse *</label>
+        <input type="text" name="adresse" id="adresse" size="60" required> 
+        <input type="text" name="cp" id="cp" size="6" minlength="5" pattern="[0-9]{5}">
+        <br><br>
+        <label for="couleur">Choisissez une couleur</label>
+        <input type="color" name="couleur" id="couleur">
+        <br><br>
+        <label for="fichier">Choisissez un ou plusieurs fichiers</label>
+        <input type="file" name="fichier" id="fichier" multiple accept="image/png, .pdf" >
+        <br><br>
+        <label for="demande">Entrez votre demande</label>
+        <textarea name="demande" id="demande" cols="30" rows="10" maxlength="200"></textarea>
+        
+        
+        <h3 class="rouge">Quel fruit(s) aimez-vous ?</h3>
+        <label for="banane">Banane</label>
+        <input type="checkbox" name="banane" id="banane" checked>
+        <label for="poire">Poire</label>
+        <input type="checkbox" name="poire" id="poire">
+        
+        <h3 class="corail">Sélectionnez votre genre</h3>
+        <label for="homme">Homme</label>
+        <input type="radio" name="sexe" id="homme" value="homme">
+       
+        <input type="radio" name="sexe" id="femme" value="femme">
+         <label for="femme">Femme</label>
+        
+        <br><br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Effacer">
+   
+   
+    </form>
+
+</body>
+</html>

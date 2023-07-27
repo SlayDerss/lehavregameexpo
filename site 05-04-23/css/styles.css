@@ -1,0 +1,18 @@
+
+/* ceci change la taille des cellules */
+td {
+  width: 150px;
+  height:100px;
+  padding: 15px;
+}
+/* commentaire */ 
+fieldset {
+  border:1px solid red;
+  border-radius: 20px;
+}
+legend {
+  color:orange;
+}
+
+.corail {color:rgb(0, 239, 8);}
+.rouge {color:red;}
